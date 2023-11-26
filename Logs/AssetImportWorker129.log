@@ -1,0 +1,237 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.29f1 (204d6dc9ae1c) revision 2116973'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 3500 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.29f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker129
+-projectPath
+C:/Users/usuario/Documents/GitHub/SpaceRunnerv2
+-logFile
+Logs/AssetImportWorker129.log
+-srvPort
+54340
+Successfully changed project path to: C:/Users/usuario/Documents/GitHub/SpaceRunnerv2
+C:/Users/usuario/Documents/GitHub/SpaceRunnerv2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18736] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 2973919572 [EditorId] 2973919572 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-K57H09E3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18736] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 2973919572 [EditorId] 2973919572 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-K57H09E3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+mdb reader table full -> cleaning up stale readers. Current readers:
+    pid     thread     txnid
+     15656 2664 -
+     14712 1b9c -
+     15040 3374 7999
+     16228 4774 8001
+     18088 4ce4 8001
+     17468 4268 8003
+     18380 46fc 8003
+     17504 1644 -
+     17868 3fc4 8005
+     17548 3dc0 -
+     17528 4c24 -
+     19664 3ca4 -
+     19912 4484 -
+     20384 4288 -
+     18308 40ac -
+     20004 4bcc -
+      5472 3e80 -
+     17932 476c -
+     14596 49c0 -
+     17652 4964 8017
+     11024 4a18 -
+     15996 432c -
+     18244 47f4 -
+      3836 41d0 -
+     19004 2678 -
+     20352 2ae4 8023
+     13416 4e9c -
+     17288 40e8 -
+     18332 4070 8026
+     17116 49b8 -
+     15744 4920 -
+     17572 4704 -
+     19712 3438 -
+      4508 4438 8031
+     16216 4e64 -
+     12504 4fc0 -
+     20156 3ed0 -
+     10208 47b4 -
+     18044 4138 8036
+     20356 4c18 -
+     19580 4c14 -
+     11600 4ed4 8039
+     12712 3b7c 8040
+     20304 3d08 -
+     16568 3548 -
+     18888 3c74 8043
+     16624 2a28 -
+     17284 20c8 -
+     20432 4d78 -
+     10108 45e8 8047
+     17996 4118 -
+     12872 359c -
+     20296 4ca0 -
+     14768 4584 -
+     18628 33bc -
+     17012 4db8 -
+     20100 4b60 -
+     18028 1ea4 -
+     16924 4bc0 -
+      6720 3ab8 -
+     18840 453c -
+      8924 4ae8 -
+     19484 4c98 -
+     18452 1d58 8063
+     17884 4358 -
+     15460 3dd4 -
+     15388 4bc8 -
+     18620 4e5c -
+     19268 4f10 -
+      2016 4798 -
+     14952 38ac -
+     18600 346c -
+     17612 2acc -
+     17664 4970 -
+     18692 3028 -
+     15300 4778 -
+     14928 4c08 -
+     20220 4658 -
+     16500 4f58 -
+     17904 4a80 -
+      5628 3c68 -
+     17484 42a8 -
+     13264 4c38 -
+     14372 4564 -
+     19060 1b50 -
+     15216 44fc -
+     15800 410c -
+       820 44bc -
+     17908 3eac -
+     18916 4d64 -
+     18108 4928 -
+     19008 4014 -
+     17496 4850 -
+     11604 4fa8 -
+     17792 373c -
+     19228 488c -
+     19468 1900 -
+     10336 4408 -
+     19112 482c -
+     18140 438c -
+     18212 4830 -
+     14020 205c -
+     18792 4ea8 -
+     20164 4698 -
+     11972 4bec -
+     11584 46cc -
+     18200 45f8 -
+     11016 48c8 -
+     12520 4894 -
+     17748 4a30 -
+     18672 4848 -
+     16580 43d4 -
+      7560 4de8 -
+     17100 4bb8 -
+     18456 37c4 -
+     19104 3d2c -
+     17232 3ac8 -
+     16248 3510 -
+     18560 4b4c 8119
+     16004 4ba4 -
+     18000 48b8 -
+     14200 3c3c -
+     20472 544 -
+     17188 46b8 -
+     21132 5290 -
+     21188 52c8 -
+Cleaned out 8 stale readers
+Refreshing native plugins compatible for Editor in 276.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.29f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/usuario/Documents/GitHub/SpaceRunnerv2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     1750 MB
+    Driver:   27.20.15030.5001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.29f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019383 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 260.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.338 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2340ms)
+		BeginReloadAssembly (459ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (5ms)
+		EndReloadAssembly (1384ms)
+			LoadAssemblies (446ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (775ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (261ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (332ms)
+				ProcessInitializeOnLoadMethodAttributes (151ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.060569 seconds.
