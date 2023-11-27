@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class abb1 : MonoBehaviour
 {
-    public node insert(node root, int v, nave navee, Transform prefab)
+    public node insert(node root, int v, nave navee, Transform prefab, int order)
     {
-
         if (root == null)
         {
             GameObject nodooo = new GameObject();
@@ -24,21 +23,21 @@ public class abb1 : MonoBehaviour
                 navee.raiz = root;
                 navee.primero = true;
             }
-        }
-        else if (v > root.value)
-        {
-            node abbR = insert(root.right, v, navee, prefab);
-            root.right = abbR;
-            abbR.gameObject.transform.parent = root.transform;
+            root.order = order; //Asigna el valor de orden al nodo
         }
         else
         {
-            node abbLef = insert(root.left, v, navee, prefab);
-            root.left = abbLef;
-            abbLef.gameObject.transform.parent = root.transform;
-            
+            if (v < root.value)
+            {
+                root.left = insert(root.left, v, navee, prefab,order);
+                root.left.gameObject.transform.parent = root.transform;
+            }
+            if (v > root.value)
+            {
+                root.right = insert(root.right, v, navee, prefab,order);
+                root.right.gameObject.transform.parent = root.transform;
+            }
         }
-        
         return root;
     }
 
@@ -54,6 +53,7 @@ public class abb1 : MonoBehaviour
             return prefab;
         }
     }
+    /*
     public void Mostrar(node root)
     {
         if (root!= null) Debug.Log(root.value);
@@ -63,10 +63,20 @@ public class abb1 : MonoBehaviour
          if (root.right != null) Mostrar(root.right);
 
     }
+    */
     public void traverse(node root)
     {
         if (root == null) return;
         traverse(root.left);
         traverse(root.right);
+    }
+    public void RecorrerInorder(node root)
+    {
+        if (root != null)
+        {
+            RecorrerInorder(root.left);
+            Debug.Log("Valor: " + root.value + " - Orden: " + root.order); //Muestra el nodo actual
+            RecorrerInorder(root.right);
+        }
     }
 }

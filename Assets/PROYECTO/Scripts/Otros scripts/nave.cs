@@ -35,12 +35,13 @@ public class nave : MonoBehaviour
         pila = new Pila();
         for (municion = 0; municion < 7; municion++)
         {
-            if(prefab_MuniABB!=null) root = bst.insert(root, municion, this, prefab_MuniABB);
+            if(prefab_MuniABB!=null) root = bst.insert(root, municion, this, prefab_MuniABB,municion);
         }
-        Debug.Log(root.value);
-        Debug.Log(raiz.right.value);
+        //Debug.Log(root.value);
+        //Debug.Log(raiz.right.value);
         root = raiz;
-        bst.Mostrar(root);
+        //bst.Mostrar(root);
+        bst.RecorrerInorder(root);
         root = raiz;
         bst.Descargar(root,this);
         
@@ -63,6 +64,8 @@ public class nave : MonoBehaviour
             else
             if (ConArma_tipo == 2) Instantiate(cola.Desencolar(), indicadorpory.position, indicadorpory.rotation);
         }
+        bst.RecorrerInorder(root);
+        
     }
 
 
@@ -74,7 +77,7 @@ public class nave : MonoBehaviour
             for (int i = 0; i < cantidad; i++)
             {
                 municion++;
-                if (prefab_MuniABB != null) root = bst.insert(root, municion, this, prefab_MuniABB);
+                if (prefab_MuniABB != null) root = bst.insert(root, municion, this, prefab_MuniABB,i);
             }
         }
         else
