@@ -65,7 +65,7 @@ Transform:
   m_Children:
   - {fileID: 242774287491225010}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7550097275101671444
 SpriteRenderer:
@@ -129,25 +129,6 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -166,7 +147,6 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
-  m_UseDelaunayMesh: 0
 --- !u!95 &8686566302477296788
 Animator:
   serializedVersion: 5
@@ -214,3 +194,8 @@ MonoBehaviour:
   prefab_MuniABB: {fileID: 5916717339008021651, guid: 8cb759c22710988498cfb9437bb34146, type: 3}
   prefab_MuniPila: {fileID: 1637934980570729049, guid: be23c639d8793354abe8229b66b9fcce, type: 3}
   prefab_MuniCola: {fileID: 6580546543363278915, guid: 1b33dd23c10adad4bac9dc27fd97b486, type: 3}
+  hud: {fileID: 0}
+  vidas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

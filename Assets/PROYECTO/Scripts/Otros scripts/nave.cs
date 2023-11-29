@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class nave : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class nave : MonoBehaviour
     public Transform prefab_MuniPila;
     public Transform prefab_MuniCola;
     Animator anim;
+
+    //HUD/UI
+    
+    public GameObject[] vidas;
     public void Start()
     {
         anim = GetComponent<Animator>();
@@ -107,6 +112,7 @@ public class nave : MonoBehaviour
         {
             vida = vida - 1;
             anim.SetTrigger("daño");
+            DesactivarVida(vida);
         }
         else
             if (vida <= 0) {
@@ -114,5 +120,9 @@ public class nave : MonoBehaviour
             Destroy(this.gameObject);
             SceneManager.LoadScene(4);
         }
+    }
+    public void DesactivarVida(int indice)
+    {
+        vidas[indice].SetActive(false);
     }
 }
