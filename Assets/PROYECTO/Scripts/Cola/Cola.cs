@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Cola : MonoBehaviour
 {
-    List<Transform> cola = new List<Transform>();
+    public List<Transform> cola = new List<Transform>();
 
-
+    /*
+    public int longCola;
     // Update is called once per frame
-
+    public void Update()
+    {
+        longCola = cola.Count;
+    }
+    */
 
     public void Encolar(Transform proyectil)
     {

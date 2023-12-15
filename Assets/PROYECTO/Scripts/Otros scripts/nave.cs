@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class nave : MonoBehaviour
 {
@@ -28,12 +29,14 @@ public class nave : MonoBehaviour
     public Transform prefab_MuniPila;
     public Transform prefab_MuniCola;
     Animator anim;
+    public Text ammoDisplay;
 
     //HUD/UI
     
     public GameObject[] vidas;
     public void Start()
     {
+        Scene escenaActual = SceneManager.GetActiveScene();
         anim = GetComponent<Animator>();
         bst = new abb1();
         raiz = root;
@@ -42,6 +45,12 @@ public class nave : MonoBehaviour
         {
             if(prefab_MuniABB!=null) root = bst.insert(root, municion, this, prefab_MuniABB,municion);
         }
+
+        if (escenaActual.name=="NIVEL 2")
+        {
+            municion = 2;
+        }
+
         //Debug.Log(root.value);
         //Debug.Log(raiz.right.value);
         root = raiz;
@@ -58,19 +67,28 @@ public class nave : MonoBehaviour
         float Horizontal = Input.GetAxis("Horizontal");
 
         transform.Translate(new Vector2(Horizontal, Vertical)*Time.deltaTime*6f);
-        
 
         root = raiz;
-        if (Input.GetMouseButtonDown(0)&& municion >1)
+        if (Input.GetMouseButtonDown(0) && municion > 1)
         {
             if (ConArma_tipo == 0) Instantiate(bst.Descargar(root, this), indicadorpory.position, indicadorpory.rotation);
             else
-            if (ConArma_tipo==1) Instantiate(pila.Pop(), indicadorpory.position, indicadorpory.rotation);
+            if (ConArma_tipo == 1)
+            {
+                Instantiate(pila.Pop(), indicadorpory.position, indicadorpory.rotation);
+                municion--;
+            }
             else
-            if (ConArma_tipo == 2) Instantiate(cola.Desencolar(), indicadorpory.position, indicadorpory.rotation);
+            if (ConArma_tipo == 2)
+            {
+                Instantiate(cola.Desencolar(), indicadorpory.position, indicadorpory.rotation);
+                municion--;
+            }
         }
         bst.RecorrerInorder(root);
-        
+
+        ammoDisplay.text = municion.ToString();
+
     }
 
 
@@ -88,6 +106,7 @@ public class nave : MonoBehaviour
         else
         if (tipo == 1)///Pila arma
         {
+            
             for (int i = 0; i < cantidad; i++)
             {
                 municion++;
@@ -97,6 +116,7 @@ public class nave : MonoBehaviour
 
         else///Cola arma
         {
+            
             for (int i = 0; i < cantidad; i++)
             {
                 municion++;

@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Pila : MonoBehaviour
 {
-     List<Transform> pila = new List<Transform>();
-
-
+    List<Transform> pila = new List<Transform>();
+    /*
+    public int longPila;
     // Update is called once per frame
-
+    public void Update()
+    {
+        longPila = pila.Count;
+    }
+    */
 
     public void Push( Transform proyectil)
     {

@@ -30,9 +30,9 @@ public class naveEnemiga : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, posestimado.transform.rotation, Time.deltaTime * 4f);
         }
 
-        if (time < 1.5f) time = time + Time.deltaTime;
+        if (time < 2.5f) time = time + Time.deltaTime;
 
-        if (time >= 1.5f)
+        if (time >= 2.5f)
         {
             Instantiate(prefab, indicadorpory.position, indicadorpory.rotation);
             if (nodriza)
