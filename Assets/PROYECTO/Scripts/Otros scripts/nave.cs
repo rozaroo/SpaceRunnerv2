@@ -29,6 +29,7 @@ public class nave : MonoBehaviour
     public Transform prefab_MuniPila;
     public Transform prefab_MuniCola;
     Animator anim;
+    public int municionReal;
     public Text ammoDisplay;
 
     //HUD/UI
@@ -87,7 +88,9 @@ public class nave : MonoBehaviour
         }
         bst.RecorrerInorder(root);
 
-        ammoDisplay.text = municion.ToString();
+        municionReal = municion - 1;
+
+        ammoDisplay.text = municionReal.ToString();
 
     }
 
